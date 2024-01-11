@@ -78,7 +78,7 @@ TodosLosJuegos.forEach(juego => {
     cont_juegos.innerHTML +=
 
         `
-        <div class="cont_juegos">
+        
 
         <div class="card_juego">
             
