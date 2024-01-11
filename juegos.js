@@ -1,6 +1,6 @@
 /** ####################### LISTA DE INFO JUEGOS ################**/
 let TodosLosJuegos = [
-    , {
+    {
         nombre: 'Call of Duty',
         precio: '12.000',
         img: 'g1.jpg'
@@ -122,7 +122,7 @@ buscador.addEventListener('keyup', e => {
 
 //**   AGREGAR JUEGO AL CARRITO     **//
 
-let carrito = [];
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 document.querySelectorAll('.btn').forEach((button, index) => {
     button.addEventListener('click', () => {
