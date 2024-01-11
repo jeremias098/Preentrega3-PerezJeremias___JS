@@ -2,7 +2,7 @@ let carritoVacio = document.querySelector('.carrito-vacio');
 let carritoConJuegos = document.querySelector('.carritoConJuegos')
 let contenidoCarrito = document.querySelector('.contenido-carrito');
 let carritoGuardado = JSON.parse(localStorage.getItem("carrito")) || [];
-
+let eliminar =document.querySelectorAll('.eliminar')
 contenidoCarrito.innerHTML = "";
 
 
@@ -23,8 +23,9 @@ contenidoCarrito.innerHTML = "";
                             <h3>${juego.nombre}</h3>
                         </div>
                         <div class="precio">
+                            <p>${juego.cantidad}<p>
                             <p>$${juego.precio}</p>
-                            <button class="btn">Eliminar</button>
+                            <button class="btn eliminar">Eliminar</button>
                         </div>
                     </div>
                 </div>`;
